@@ -1,0 +1,74 @@
+@font-face {
+    font-family: GothamPro;
+    src: url('fonts/GothamProRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: GothamPro;
+    src: url('fonts/GothamProMedium.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: icomoon;
+    src: url('fonts/icomoon.ttf') format('truetype');
+}
+
+body {
+    font-family: GothamPro;
+    font-size: $default-font;
+    font-weight: $fw-regular;
+    line-height: 1.7;
+    color: $color-grey-dark-1;
+    text-align: center;
+}
+
+.heading-primary {
+    font-size: 4rem;
+    color: $color-primary-dark;
+    font-weight: $fw-regular;
+
+    @include respond(phone) {
+        line-height: 1.2;
+    }
+
+    &--light {
+        color: $color-primary;
+    }
+
+    &--white {
+        color: $color-white;
+    }
+}
+
+.heading-focused {
+    text-transform: uppercase;
+    font-weight: $fw-bold;
+    color: $color-secondary;
+    background-color: $color-white;
+    display: inline;
+    padding: 0.5rem 1rem;
+    
+}
+
+.paragraph {
+    &:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
+    &--light {
+        color: $color-white;
+    }
+    
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+  }

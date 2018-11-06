@@ -1,0 +1,25 @@
+.gallery {
+
+    &__slider {
+        margin: 0;
+    }
+
+    &__item {
+        margin: 0 2rem;
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+
+        }
+
+        &:focus {
+            outline-color: $color-primary;
+        }
+    }
+
+    &__thumbnail {
+        height: 50rem;
+    }
+}

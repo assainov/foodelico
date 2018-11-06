@@ -1,0 +1,55 @@
+.header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    @include respond(phone) {
+        height: 85vh;
+    }
+
+    &__order-now-box {
+        padding-top: 1rem;
+    }
+
+    &__order-now-icon {
+        font-family: icomoon;
+    }
+
+    &__order-now-link {
+        &:link,
+        &:visited {
+            color: $color-primary;
+            font-size: $font-button;
+        }
+        
+    }
+
+    &__logo-box {
+        @include absCenter;
+    }
+
+    &__logo {
+        height: 70vh;
+        width: auto;
+
+        @include respond(phone) {
+            height: 40vh;
+        }
+    }
+
+    &__watch-menu-box {
+        position: absolute;
+        left: 50%;
+        bottom: 1.5rem;
+        transform: translateX(-50%);
+    }
+
+    &__watch-menu-link {
+        &:link,
+        &:visited {
+            color: $color-primary;
+            font-size: $font-button;
+        }
+    }
+
+}

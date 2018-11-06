@@ -1,0 +1,68 @@
+.chat {
+    position: relative;
+    @include clearfix;
+
+    &__talk-bubble {
+        margin: 2rem;
+        display: inline-block;
+        position: relative;
+        width: 25rem;
+        height: auto;
+        border-radius: 1.5rem;
+        -webkit-border-radius: 1.5rem;
+        -moz-border-radius: 1.5rem;
+        clear: both;
+        
+        &--left {
+            background-color: #fff;
+            float:left;
+
+            &::before {
+                content: ' ';
+                position: absolute;
+                width: 0;
+                height: 0;
+                left: -20px;
+                right: auto;
+                top: 38px;
+                bottom: auto;
+                border: 12px solid;
+                border-color: #fff #fff transparent transparent;
+            }
+        }
+
+        &--right {
+            background-color: lightgreen;
+            float:right;
+
+            &::after {
+                content: ' ';
+                position: absolute;
+                width: 0;
+                height: 0;
+                left: auto;
+                right: -20px;
+                top: 38px;
+                bottom: auto;
+                border: 12px solid;
+                border-color: lightgreen transparent transparent lightgreen;
+            }
+        }
+    }
+
+    &__talktext {
+        display: block;
+        margin: 0 auto;
+        padding: 0.5em;
+        text-align: left;
+        line-height: inherit;
+        font-size: 1.6rem;
+        font-weight: $fw-regular;
+    }
+
+    &__talktext > * {
+        display: block;
+        padding: 1rem 3rem;
+    }
+
+}

@@ -1,0 +1,10 @@
+.footer {
+    padding: 5rem 0;
+
+    &__line {
+        display: block;
+        width: 15rem;
+        border-top: 2px solid $color-primary;
+        margin: 4rem auto;
+    }
+}
