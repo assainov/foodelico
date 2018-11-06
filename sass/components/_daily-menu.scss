@@ -1,6 +1,9 @@
 .daily-menu {
     width: 60%;
     margin: 0 auto;
+    @include respond(phone) {
+        width: 95%;
+    }
 
     & * {
         outline-color: $color-primary;
@@ -15,6 +18,10 @@
         color: $color-primary;
         cursor: pointer;
         z-index: 1000;
+
+        @include respond(phone) {
+            font-size: 5rem;
+        }
 
         &--left {
             left: 20%;

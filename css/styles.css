@@ -125,6 +125,9 @@ body {
 .daily-menu {
   width: 60%;
   margin: 0 auto; }
+  @media (max-width: 37.5em) {
+    .daily-menu {
+      width: 95%; } }
   .daily-menu * {
     outline-color: #a78b6b; }
   .daily-menu__arrow {
@@ -135,6 +138,9 @@ body {
     color: #a78b6b;
     cursor: pointer;
     z-index: 1000; }
+    @media (max-width: 37.5em) {
+      .daily-menu__arrow {
+        font-size: 5rem; } }
     .daily-menu__arrow--left {
       left: 20%; }
       @media (max-width: 37.5em) {
@@ -360,7 +366,8 @@ section {
           height: 60rem; } }
       @media (max-width: 37.5em) {
         .section-service .service__image-box {
-          width: 100%; } }
+          width: 100%;
+          height: 50rem; } }
     .section-service .service__fish {
       position: absolute;
       top: 5rem;
