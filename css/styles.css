@@ -268,7 +268,7 @@ body {
   margin: 0; }
 
 .gallery__item {
-  margin: 0 2rem; }
+  margin: 0; }
 
 .gallery__link:focus {
   outline-color: #a78b6b; }
