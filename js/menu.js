@@ -149,7 +149,7 @@ const FirebaseCtrl = (function(DayCtrl) {
                 DayCtrl.setData(days);
 
                 //  Set Monday as a current day
-                DayCtrl.setCurrentDay('Monday');
+                DayCtrl.setCurrentDay('Montag');
 
             });
         }
