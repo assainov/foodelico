@@ -131,14 +131,12 @@ const MenuApp = (function() {
                 <h1 class="weekday daily-menu__weekday">${day.name}</h1>
                 <h5 class="menu-title daily-menu__title">Suppe</h5>
                 <p class="soup">${day.soup}</p>
-                <h5 class="menu-title daily-menu__title">Menu 1</h5>
+                <h5 class="menu-title daily-menu__title">Menü 1</h5>
                 <p class="option1 daily-menu__dish">${day.option1}</p>
-                <h5 class="menu-title daily-menu__title">Menu 2</h5>
+                <h5 class="menu-title daily-menu__title">Menü 2</h5>
                 <p class="option2 daily-menu__dish">${day.option2}</p>
-                <h5 class="menu-title daily-menu__title">Menu 3</h5>
+                <h5 class="menu-title daily-menu__title">Menü 3</h5>
                 <p class="option3 daily-menu__dish">${day.option3}</p>
-                <h5 class="menu-title daily-menu__title">Salat</h5>
-                <p class="salad daily-menu__dish">${day.salad}</p>
                 <h5 class="menu-title daily-menu__title">Nachspeise</h5>
                 <p class="dessert daily-menu__dish">${day.dessert}</p>
                 `;

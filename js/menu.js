@@ -209,6 +209,7 @@ const AppCtrl = (function(DayCtrl, UICtrl) {
                 let database = firebase.database().ref();
 
                 database.child('days').set(DayCtrl.state.days);
+                alert('Updated successfully!');
             } else {
                 alert('User is not signed in');
             }

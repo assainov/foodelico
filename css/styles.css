@@ -83,14 +83,23 @@ body {
   font-weight: bold;
   color: #1d315c;
   background-color: #fff;
-  display: inline;
-  padding: 0.5rem 1rem; }
+  display: inline; }
+
+.heading-span {
+  padding: 0.5rem 1rem;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone; }
 
 .paragraph:not(:last-child) {
   margin-bottom: 1rem; }
 
 .paragraph--light {
   color: #fff; }
+
+.paragraph--small-uppercase {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: bold; }
 
 .noselect {
   -webkit-touch-callout: none;
@@ -157,7 +166,7 @@ body {
   .daily-menu__title {
     color: #a78b6c;
     font-size: 2.5rem;
-    font-weight: bold;
+    font-weight: normal;
     margin-bottom: 0.5rem; }
   .daily-menu__dish {
     color: inherit;

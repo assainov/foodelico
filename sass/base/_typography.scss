@@ -48,8 +48,13 @@ body {
     color: $color-secondary;
     background-color: $color-white;
     display: inline;
-    padding: 0.5rem 1rem;
     
+}
+
+.heading-span {
+    padding: 0.5rem 1rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
 }
 
 .paragraph {
@@ -59,6 +64,12 @@ body {
 
     &--light {
         color: $color-white;
+    }
+
+    &--small-uppercase {
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        font-weight: $fw-bold;
     }
     
 }
